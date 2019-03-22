@@ -1,0 +1,5 @@
+<h1>Fast http</h1>
+<div *ngFor="let repo of repos | async">
+  <h2>{{repo.name}}</h2>  
+  <div>{{repo.description|json}}</div>
+</div>
